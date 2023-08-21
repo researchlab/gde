@@ -8,10 +8,14 @@
 - rabbitmq_publisher_test.go
 - rabbitmq_consumer_test.go
 - example_rabbitmq_publiser_test.go
-- exampler_rabbitmq_consumer_test.go
+- example_rabbitmq_consumer_test.go
 
+如果不能剥离业务的, 可以直接用${第三方主要名称}.go, 如
+- rabbitmq.go
+- rabbitmq_test.go
+- example_rabbitmq_test.go
 
-另外如果是共用的业务, 则统一用 ${第三方主要名称}_helper.go 命名文件, 如
+如果是共用的业务, 则统一用 ${第三方主要名称}_utils.go 命名文件, 如
 - rabbitmq_utils.go
 
 如果多个包裹都需要用到, 则直接命名为utils.go 
